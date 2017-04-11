@@ -19,6 +19,7 @@
 		CF6009DF1E9CD4A500674099 /* CustomInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6009DC1E9CD4A500674099 /* CustomInteractionController.m */; };
 		CF6009E01E9CD4A500674099 /* CustomNavigationAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6009DD1E9CD4A500674099 /* CustomNavigationAnimationController.m */; };
 		CF6009E11E9CD4A500674099 /* CustomTransitionNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6009DE1E9CD4A500674099 /* CustomTransitionNavigationController.m */; };
+		CF6009E41E9CD75100674099 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6009E31E9CD75100674099 /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		CF6009DC1E9CD4A500674099 /* CustomInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomInteractionController.m; sourceTree = "<group>"; };
 		CF6009DD1E9CD4A500674099 /* CustomNavigationAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationAnimationController.m; sourceTree = "<group>"; };
 		CF6009DE1E9CD4A500674099 /* CustomTransitionNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTransitionNavigationController.m; sourceTree = "<group>"; };
+		CF6009E21E9CD75100674099 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		CF6009E31E9CD75100674099 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				CF6009A01E9CC79300674099 /* ViewController.m */,
 				CF6009CC1E9CC8BC00674099 /* SecondViewController.h */,
 				CF6009CD1E9CC8BC00674099 /* SecondViewController.m */,
+				CF6009E21E9CD75100674099 /* ThirdViewController.h */,
+				CF6009E31E9CD75100674099 /* ThirdViewController.m */,
 				CF6009A21E9CC79300674099 /* Main.storyboard */,
 				CF6009A51E9CC79300674099 /* Assets.xcassets */,
 				CF6009A71E9CC79300674099 /* LaunchScreen.storyboard */,
@@ -159,10 +164,10 @@
 			isa = PBXGroup;
 			children = (
 				CF6009D91E9CD4A500674099 /* CustomInteractionController.h */,
-				CF6009DA1E9CD4A500674099 /* CustomNavigationAnimationController.h */,
-				CF6009DB1E9CD4A500674099 /* CustomTransitionNavigationController.h */,
 				CF6009DC1E9CD4A500674099 /* CustomInteractionController.m */,
+				CF6009DA1E9CD4A500674099 /* CustomNavigationAnimationController.h */,
 				CF6009DD1E9CD4A500674099 /* CustomNavigationAnimationController.m */,
+				CF6009DB1E9CD4A500674099 /* CustomTransitionNavigationController.h */,
 				CF6009DE1E9CD4A500674099 /* CustomTransitionNavigationController.m */,
 			);
 			path = CustomNavigationTransition;
@@ -306,6 +311,7 @@
 			files = (
 				CF6009CE1E9CC8BC00674099 /* SecondViewController.m in Sources */,
 				CF6009A11E9CC79300674099 /* ViewController.m in Sources */,
+				CF6009E41E9CD75100674099 /* ThirdViewController.m in Sources */,
 				CF60099E1E9CC79300674099 /* AppDelegate.m in Sources */,
 				CF6009E01E9CD4A500674099 /* CustomNavigationAnimationController.m in Sources */,
 				CF6009DF1E9CD4A500674099 /* CustomInteractionController.m in Sources */,

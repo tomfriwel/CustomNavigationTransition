@@ -91,7 +91,7 @@
         <!--Third-->
         <scene sceneID="bmM-Nu-gbs">
             <objects>
-                <viewController title="Third" id="PsY-0C-3G8" sceneMemberID="viewController">
+                <viewController title="Third" id="PsY-0C-3G8" customClass="ThirdViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3sa-TD-7dK"/>
                         <viewControllerLayoutGuide type="bottom" id="8xz-ki-gIV"/>

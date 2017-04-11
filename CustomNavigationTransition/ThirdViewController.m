@@ -1,18 +1,18 @@
 //
-//  SecondViewController.m
+//  ThirdViewController.m
 //  CustomNavigationTransition
 //
 //  Created by tomfriwel on 11/04/2017.
 //  Copyright © 2017 tomfriwel. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "ThirdViewController.h"
 
-@interface SecondViewController ()
+@interface ThirdViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation ThirdViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,11 +22,7 @@
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
-}
-
-- (IBAction)backAction:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
 @end

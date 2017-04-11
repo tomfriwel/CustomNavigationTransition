@@ -26,6 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.interactivePopGestureRecognizer.delegate = self;
     self.interaction = [[CustomInteractionController alloc] init];
     self.interaction.interactionDelegate = self;
     
