@@ -52,8 +52,6 @@
             [self.navigationController popViewControllerAnimated:YES];
             break;
         }
-            
-            
         default:
             break;
     }
