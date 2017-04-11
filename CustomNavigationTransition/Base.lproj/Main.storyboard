@@ -68,6 +68,14 @@
                                     <action selector="backAction:" destination="Uxr-at-7ar" eventType="touchUpInside" id="TvM-9I-hXV"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BW8-jP-9q1">
+                                <rect key="frame" x="172" y="363" width="35" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Push"/>
+                                <connections>
+                                    <segue destination="PsY-0C-3G8" kind="show" id="64A-5v-A3H"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -80,10 +88,28 @@
             </objects>
             <point key="canvasLocation" x="1892" y="122.78860569715144"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Third-->
+        <scene sceneID="bmM-Nu-gbs">
+            <objects>
+                <viewController title="Third" id="PsY-0C-3G8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3sa-TD-7dK"/>
+                        <viewControllerLayoutGuide type="bottom" id="8xz-ki-gIV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WPv-cG-gfL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ykJ-Eg-pwG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2670" y="123"/>
+        </scene>
+        <!--Custom Transition Navigation Controller-->
         <scene sceneID="9Rj-jA-V4U">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YIt-jx-rQB" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YIt-jx-rQB" customClass="CustomTransitionNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IMb-GU-0va">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

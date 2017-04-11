@@ -16,8 +16,9 @@
 		CF6009B41E9CC79300674099 /* CustomNavigationTransitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6009B31E9CC79300674099 /* CustomNavigationTransitionTests.m */; };
 		CF6009BF1E9CC79300674099 /* CustomNavigationTransitionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6009BE1E9CC79300674099 /* CustomNavigationTransitionUITests.m */; };
 		CF6009CE1E9CC8BC00674099 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6009CD1E9CC8BC00674099 /* SecondViewController.m */; };
-		CF6009D31E9CC98A00674099 /* CustomInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6009D01E9CC98A00674099 /* CustomInteractionController.m */; };
-		CF6009D41E9CC98A00674099 /* CustomNavigationAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6009D21E9CC98A00674099 /* CustomNavigationAnimationController.m */; };
+		CF6009DF1E9CD4A500674099 /* CustomInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6009DC1E9CD4A500674099 /* CustomInteractionController.m */; };
+		CF6009E01E9CD4A500674099 /* CustomNavigationAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6009DD1E9CD4A500674099 /* CustomNavigationAnimationController.m */; };
+		CF6009E11E9CD4A500674099 /* CustomTransitionNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6009DE1E9CD4A500674099 /* CustomTransitionNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,10 +57,12 @@
 		CF6009C01E9CC79300674099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF6009CC1E9CC8BC00674099 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		CF6009CD1E9CC8BC00674099 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		CF6009CF1E9CC98A00674099 /* CustomInteractionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomInteractionController.h; sourceTree = "<group>"; };
-		CF6009D01E9CC98A00674099 /* CustomInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomInteractionController.m; sourceTree = "<group>"; };
-		CF6009D11E9CC98A00674099 /* CustomNavigationAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationAnimationController.h; sourceTree = "<group>"; };
-		CF6009D21E9CC98A00674099 /* CustomNavigationAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationAnimationController.m; sourceTree = "<group>"; };
+		CF6009D91E9CD4A500674099 /* CustomInteractionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomInteractionController.h; sourceTree = "<group>"; };
+		CF6009DA1E9CD4A500674099 /* CustomNavigationAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationAnimationController.h; sourceTree = "<group>"; };
+		CF6009DB1E9CD4A500674099 /* CustomTransitionNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTransitionNavigationController.h; sourceTree = "<group>"; };
+		CF6009DC1E9CD4A500674099 /* CustomInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomInteractionController.m; sourceTree = "<group>"; };
+		CF6009DD1E9CD4A500674099 /* CustomNavigationAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationAnimationController.m; sourceTree = "<group>"; };
+		CF6009DE1E9CD4A500674099 /* CustomTransitionNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTransitionNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,16 +113,13 @@
 		CF6009981E9CC79300674099 /* CustomNavigationTransition */ = {
 			isa = PBXGroup;
 			children = (
+				CF6009D81E9CD46C00674099 /* CustomNavigationTransition */,
 				CF60099C1E9CC79300674099 /* AppDelegate.h */,
 				CF60099D1E9CC79300674099 /* AppDelegate.m */,
 				CF60099F1E9CC79300674099 /* ViewController.h */,
 				CF6009A01E9CC79300674099 /* ViewController.m */,
 				CF6009CC1E9CC8BC00674099 /* SecondViewController.h */,
 				CF6009CD1E9CC8BC00674099 /* SecondViewController.m */,
-				CF6009CF1E9CC98A00674099 /* CustomInteractionController.h */,
-				CF6009D01E9CC98A00674099 /* CustomInteractionController.m */,
-				CF6009D11E9CC98A00674099 /* CustomNavigationAnimationController.h */,
-				CF6009D21E9CC98A00674099 /* CustomNavigationAnimationController.m */,
 				CF6009A21E9CC79300674099 /* Main.storyboard */,
 				CF6009A51E9CC79300674099 /* Assets.xcassets */,
 				CF6009A71E9CC79300674099 /* LaunchScreen.storyboard */,
@@ -153,6 +153,19 @@
 				CF6009C01E9CC79300674099 /* Info.plist */,
 			);
 			path = CustomNavigationTransitionUITests;
+			sourceTree = "<group>";
+		};
+		CF6009D81E9CD46C00674099 /* CustomNavigationTransition */ = {
+			isa = PBXGroup;
+			children = (
+				CF6009D91E9CD4A500674099 /* CustomInteractionController.h */,
+				CF6009DA1E9CD4A500674099 /* CustomNavigationAnimationController.h */,
+				CF6009DB1E9CD4A500674099 /* CustomTransitionNavigationController.h */,
+				CF6009DC1E9CD4A500674099 /* CustomInteractionController.m */,
+				CF6009DD1E9CD4A500674099 /* CustomNavigationAnimationController.m */,
+				CF6009DE1E9CD4A500674099 /* CustomTransitionNavigationController.m */,
+			);
+			path = CustomNavigationTransition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,7 +235,7 @@
 				TargetAttributes = {
 					CF6009951E9CC79300674099 = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = T5EW9858SB;
+						DevelopmentTeam = 8SJXRJ78CW;
 						ProvisioningStyle = Automatic;
 					};
 					CF6009AE1E9CC79300674099 = {
@@ -294,9 +307,10 @@
 				CF6009CE1E9CC8BC00674099 /* SecondViewController.m in Sources */,
 				CF6009A11E9CC79300674099 /* ViewController.m in Sources */,
 				CF60099E1E9CC79300674099 /* AppDelegate.m in Sources */,
-				CF6009D41E9CC98A00674099 /* CustomNavigationAnimationController.m in Sources */,
-				CF6009D31E9CC98A00674099 /* CustomInteractionController.m in Sources */,
+				CF6009E01E9CD4A500674099 /* CustomNavigationAnimationController.m in Sources */,
+				CF6009DF1E9CD4A500674099 /* CustomInteractionController.m in Sources */,
 				CF60099B1E9CC79300674099 /* main.m in Sources */,
+				CF6009E11E9CD4A500674099 /* CustomTransitionNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,7 +459,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = T5EW9858SB;
+				DEVELOPMENT_TEAM = 8SJXRJ78CW;
 				INFOPLIST_FILE = CustomNavigationTransition/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tomfriwel.com.CustomNavigationTransition;
@@ -457,7 +471,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = T5EW9858SB;
+				DEVELOPMENT_TEAM = 8SJXRJ78CW;
 				INFOPLIST_FILE = CustomNavigationTransition/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tomfriwel.com.CustomNavigationTransition;
