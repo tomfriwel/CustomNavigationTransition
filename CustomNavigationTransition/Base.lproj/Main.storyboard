@@ -32,14 +32,26 @@
                                     <segue destination="Uxr-at-7ar" kind="show" id="MwA-cX-qms"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="l56-ke-KSh">
+                                <rect key="frame" x="10" y="567" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="I56-Xk-Y9O"/>
+                                    <constraint firstAttribute="height" constant="90" id="YH7-Qe-wdk"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7IE-Z2-iSr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Afv-eM-ZwP"/>
+                            <constraint firstItem="l56-ke-KSh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="WG9-YQ-qv0"/>
                             <constraint firstItem="7IE-Z2-iSr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mMF-nK-qP7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="l56-ke-KSh" secondAttribute="bottom" constant="10" id="wJl-wr-WV1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="First" id="FOn-fS-kZb"/>
+                    <connections>
+                        <outlet property="imageView" destination="l56-ke-KSh" id="wZx-VZ-jLm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -124,5 +136,26 @@
             </objects>
             <point key="canvasLocation" x="77.599999999999994" y="776.76161919040487"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="H2p-Ur-3gG">
+            <objects>
+                <viewController id="L61-KN-Qd2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fNc-6Z-y3e"/>
+                        <viewControllerLayoutGuide type="bottom" id="mfG-4u-nyc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4wX-8a-aBz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YHc-SS-nnM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1055" y="825"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="test" width="1600" height="1067"/>
+    </resources>
 </document>

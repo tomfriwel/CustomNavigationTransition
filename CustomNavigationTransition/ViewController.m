@@ -12,6 +12,8 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
 @end
 
 @implementation ViewController
@@ -19,6 +21,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapHandle:)];
+    [self.imageView addGestureRecognizer:tapGesture];
+}
+
+-(void)tapHandle:(id)sender {
+    NSLog(@"Tap image");
 }
 
 -(void)viewWillAppear:(BOOL)animated {

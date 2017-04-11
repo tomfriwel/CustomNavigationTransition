@@ -20,6 +20,7 @@
 		CF6009E01E9CD4A500674099 /* CustomNavigationAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6009DD1E9CD4A500674099 /* CustomNavigationAnimationController.m */; };
 		CF6009E11E9CD4A500674099 /* CustomTransitionNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6009DE1E9CD4A500674099 /* CustomTransitionNavigationController.m */; };
 		CF6009E41E9CD75100674099 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6009E31E9CD75100674099 /* ThirdViewController.m */; };
+		CF6009E81E9D086F00674099 /* PopScaleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6009E71E9D086F00674099 /* PopScaleTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		CF6009DE1E9CD4A500674099 /* CustomTransitionNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTransitionNavigationController.m; sourceTree = "<group>"; };
 		CF6009E21E9CD75100674099 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		CF6009E31E9CD75100674099 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		CF6009E61E9D086F00674099 /* PopScaleTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopScaleTransition.h; sourceTree = "<group>"; };
+		CF6009E71E9D086F00674099 /* PopScaleTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopScaleTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +99,7 @@
 		CF60098D1E9CC79300674099 = {
 			isa = PBXGroup;
 			children = (
-				CF6009981E9CC79300674099 /* CustomNavigationTransition */,
+				CF6009981E9CC79300674099 /* CustomNavigationTransitionDemo */,
 				CF6009B21E9CC79300674099 /* CustomNavigationTransitionTests */,
 				CF6009BD1E9CC79300674099 /* CustomNavigationTransitionUITests */,
 				CF6009971E9CC79300674099 /* Products */,
@@ -113,9 +116,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CF6009981E9CC79300674099 /* CustomNavigationTransition */ = {
+		CF6009981E9CC79300674099 /* CustomNavigationTransitionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CF6009E51E9D081800674099 /* PopScaleTransition */,
 				CF6009D81E9CD46C00674099 /* CustomNavigationTransition */,
 				CF60099C1E9CC79300674099 /* AppDelegate.h */,
 				CF60099D1E9CC79300674099 /* AppDelegate.m */,
@@ -131,6 +135,7 @@
 				CF6009AA1E9CC79300674099 /* Info.plist */,
 				CF6009991E9CC79300674099 /* Supporting Files */,
 			);
+			name = CustomNavigationTransitionDemo;
 			path = CustomNavigationTransition;
 			sourceTree = "<group>";
 		};
@@ -171,6 +176,15 @@
 				CF6009DE1E9CD4A500674099 /* CustomTransitionNavigationController.m */,
 			);
 			path = CustomNavigationTransition;
+			sourceTree = "<group>";
+		};
+		CF6009E51E9D081800674099 /* PopScaleTransition */ = {
+			isa = PBXGroup;
+			children = (
+				CF6009E61E9D086F00674099 /* PopScaleTransition.h */,
+				CF6009E71E9D086F00674099 /* PopScaleTransition.m */,
+			);
+			name = PopScaleTransition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF6009CE1E9CC8BC00674099 /* SecondViewController.m in Sources */,
+				CF6009E81E9D086F00674099 /* PopScaleTransition.m in Sources */,
 				CF6009A11E9CC79300674099 /* ViewController.m in Sources */,
 				CF6009E41E9CD75100674099 /* ThirdViewController.m in Sources */,
 				CF60099E1E9CC79300674099 /* AppDelegate.m in Sources */,

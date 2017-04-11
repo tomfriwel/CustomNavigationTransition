@@ -26,6 +26,7 @@
     CATransform3D viewFromTransform = CATransform3DMakeTranslation(0, 0, 0);
     CATransform3D viewToTransform = CATransform3DMakeTranslation(0, direction * containerView.frame.size.height, 0);
 
+    
     containerView.transform = CGAffineTransformMakeTranslation(0, 0);
     
     toView.layer.transform = viewToTransform;

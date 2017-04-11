@@ -12,7 +12,7 @@
 #import "CustomNavigationAnimationController.h"
 #import "SecondViewController.h"
 
-@interface CustomTransitionNavigationController ()<UIViewControllerTransitioningDelegate, UINavigationControllerDelegate, CustomInteractionControllerDelegate>
+@interface CustomTransitionNavigationController ()<UIViewControllerTransitioningDelegate, UINavigationControllerDelegate, CustomInteractionControllerDelegate, UIGestureRecognizerDelegate>
 
 @property CustomInteractionController *interaction;
 @property CustomNavigationAnimationController *navAnimation;
