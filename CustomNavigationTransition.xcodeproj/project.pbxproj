@@ -15,6 +15,9 @@
 		CF6009A91E9CC79300674099 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6009A71E9CC79300674099 /* LaunchScreen.storyboard */; };
 		CF6009B41E9CC79300674099 /* CustomNavigationTransitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6009B31E9CC79300674099 /* CustomNavigationTransitionTests.m */; };
 		CF6009BF1E9CC79300674099 /* CustomNavigationTransitionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6009BE1E9CC79300674099 /* CustomNavigationTransitionUITests.m */; };
+		CF6009CE1E9CC8BC00674099 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6009CD1E9CC8BC00674099 /* SecondViewController.m */; };
+		CF6009D31E9CC98A00674099 /* CustomInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6009D01E9CC98A00674099 /* CustomInteractionController.m */; };
+		CF6009D41E9CC98A00674099 /* CustomNavigationAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6009D21E9CC98A00674099 /* CustomNavigationAnimationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		CF6009BA1E9CC79300674099 /* CustomNavigationTransitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomNavigationTransitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6009BE1E9CC79300674099 /* CustomNavigationTransitionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationTransitionUITests.m; sourceTree = "<group>"; };
 		CF6009C01E9CC79300674099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF6009CC1E9CC8BC00674099 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		CF6009CD1E9CC8BC00674099 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		CF6009CF1E9CC98A00674099 /* CustomInteractionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomInteractionController.h; sourceTree = "<group>"; };
+		CF6009D01E9CC98A00674099 /* CustomInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomInteractionController.m; sourceTree = "<group>"; };
+		CF6009D11E9CC98A00674099 /* CustomNavigationAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationAnimationController.h; sourceTree = "<group>"; };
+		CF6009D21E9CC98A00674099 /* CustomNavigationAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationAnimationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,12 @@
 				CF60099D1E9CC79300674099 /* AppDelegate.m */,
 				CF60099F1E9CC79300674099 /* ViewController.h */,
 				CF6009A01E9CC79300674099 /* ViewController.m */,
+				CF6009CC1E9CC8BC00674099 /* SecondViewController.h */,
+				CF6009CD1E9CC8BC00674099 /* SecondViewController.m */,
+				CF6009CF1E9CC98A00674099 /* CustomInteractionController.h */,
+				CF6009D01E9CC98A00674099 /* CustomInteractionController.m */,
+				CF6009D11E9CC98A00674099 /* CustomNavigationAnimationController.h */,
+				CF6009D21E9CC98A00674099 /* CustomNavigationAnimationController.m */,
 				CF6009A21E9CC79300674099 /* Main.storyboard */,
 				CF6009A51E9CC79300674099 /* Assets.xcassets */,
 				CF6009A71E9CC79300674099 /* LaunchScreen.storyboard */,
@@ -276,8 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF6009CE1E9CC8BC00674099 /* SecondViewController.m in Sources */,
 				CF6009A11E9CC79300674099 /* ViewController.m in Sources */,
 				CF60099E1E9CC79300674099 /* AppDelegate.m in Sources */,
+				CF6009D41E9CC98A00674099 /* CustomNavigationAnimationController.m in Sources */,
+				CF6009D31E9CC98A00674099 /* CustomInteractionController.m in Sources */,
 				CF60099B1E9CC79300674099 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
