@@ -21,6 +21,7 @@
 		CF6009E11E9CD4A500674099 /* CustomTransitionNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6009DE1E9CD4A500674099 /* CustomTransitionNavigationController.m */; };
 		CF6009E41E9CD75100674099 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6009E31E9CD75100674099 /* ThirdViewController.m */; };
 		CF6009E81E9D086F00674099 /* PopScaleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6009E71E9D086F00674099 /* PopScaleTransition.m */; };
+		CF6009EB1E9DBFE500674099 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6009EA1E9DBFE500674099 /* ImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		CF6009E31E9CD75100674099 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		CF6009E61E9D086F00674099 /* PopScaleTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopScaleTransition.h; sourceTree = "<group>"; };
 		CF6009E71E9D086F00674099 /* PopScaleTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopScaleTransition.m; sourceTree = "<group>"; };
+		CF6009E91E9DBFE500674099 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		CF6009EA1E9DBFE500674099 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,8 @@
 				CF6009CD1E9CC8BC00674099 /* SecondViewController.m */,
 				CF6009E21E9CD75100674099 /* ThirdViewController.h */,
 				CF6009E31E9CD75100674099 /* ThirdViewController.m */,
+				CF6009E91E9DBFE500674099 /* ImageViewController.h */,
+				CF6009EA1E9DBFE500674099 /* ImageViewController.m */,
 				CF6009A21E9CC79300674099 /* Main.storyboard */,
 				CF6009A51E9CC79300674099 /* Assets.xcassets */,
 				CF6009A71E9CC79300674099 /* LaunchScreen.storyboard */,
@@ -323,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF6009EB1E9DBFE500674099 /* ImageViewController.m in Sources */,
 				CF6009CE1E9CC8BC00674099 /* SecondViewController.m in Sources */,
 				CF6009E81E9D086F00674099 /* PopScaleTransition.m in Sources */,
 				CF6009A11E9CC79300674099 /* ViewController.m in Sources */,
