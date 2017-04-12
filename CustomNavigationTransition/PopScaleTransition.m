@@ -55,25 +55,25 @@
     }
     
     [UIView animateWithDuration:[self transitionDuration:transitionContext]
-        delay:0
-        usingSpringWithDamping:1.0
-        initialSpringVelocity:0.0
-        options:UIViewAnimationOptionAllowUserInteraction | UIViewAnimationOptionCurveLinear
-        animations:^{
-            if (self.presenting) {
-                herbView.transform = self.presenting ? CGAffineTransformIdentity : scaleTransform;
-                herbView.center = CGPointMake(CGRectGetMidX(finalFrame), CGRectGetMidY(finalFrame));
-            }
-            else {
-                herbView.center = CGPointMake(CGRectGetMidX(finalFrame), CGRectGetMidY(finalFrame));
-                herbView.frame = self.originFrame;
-            }
-    } completion:^(BOOL finished) {
-        [transitionContext completeTransition:YES];
-        if ([self.delegate respondsToSelector:@selector(animationEnded)]) {
-            [self.delegate animationEnded];
-        }
-    }];
+                          delay:0
+         usingSpringWithDamping:1.0
+          initialSpringVelocity:0.0
+                        options:UIViewAnimationOptionAllowUserInteraction | UIViewAnimationOptionCurveLinear
+                     animations:^{
+                         if (self.presenting) {
+                             herbView.transform = self.presenting ? CGAffineTransformIdentity : scaleTransform;
+                             herbView.center = CGPointMake(CGRectGetMidX(finalFrame), CGRectGetMidY(finalFrame));
+                         }
+                         else {
+                             herbView.center = CGPointMake(CGRectGetMidX(finalFrame), CGRectGetMidY(finalFrame));
+                             herbView.frame = self.originFrame;
+                         }
+                     } completion:^(BOOL finished) {
+                         [transitionContext completeTransition:YES];
+                         if ([self.delegate respondsToSelector:@selector(animationEnded)]) {
+                             [self.delegate animationEnded];
+                         }
+                     }];
 }
 
 //-(void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext {

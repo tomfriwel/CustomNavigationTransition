@@ -11,7 +11,7 @@
 @implementation CustomNavigationAnimationController
 
 -(NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext {
-    return 1.0;
+    return 0.5;
 }
 
 -(void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
@@ -31,22 +31,27 @@
     
     toView.layer.transform = viewToTransform;
     [containerView addSubview: toView];
-    [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
-        containerView.transform = CGAffineTransformMakeTranslation(0, -direction * containerView.frame.size.height);
-        fromView.layer.transform = viewFromTransform;
-        toView.layer.transform = CATransform3DMakeTranslation(0, direction * containerView.frame.size.height, 0);
-    } completion:^(BOOL finished) {
-        containerView.transform =  CGAffineTransformIdentity;
-        fromView.layer.transform = CATransform3DIdentity;
-        toView.layer.transform = CATransform3DIdentity;
-        
-        if (transitionContext.transitionWasCancelled) {
-            [toView removeFromSuperview];
-        } else {
-            [fromView removeFromSuperview];
-        }
-        [transitionContext completeTransition: ![transitionContext transitionWasCancelled]];
-    }];
+    [UIView animateWithDuration:[self transitionDuration:transitionContext]
+                          delay:0
+         usingSpringWithDamping:1.0
+          initialSpringVelocity:0.0
+                        options:UIViewAnimationOptionAllowUserInteraction | UIViewAnimationOptionCurveLinear
+                     animations:^{
+                         containerView.transform = CGAffineTransformMakeTranslation(0, -direction * containerView.frame.size.height);
+                         fromView.layer.transform = viewFromTransform;
+                         toView.layer.transform = CATransform3DMakeTranslation(0, direction * containerView.frame.size.height, 0);
+                     } completion:^(BOOL finished) {
+                         containerView.transform =  CGAffineTransformIdentity;
+                         fromView.layer.transform = CATransform3DIdentity;
+                         toView.layer.transform = CATransform3DIdentity;
+                         
+                         if (transitionContext.transitionWasCancelled) {
+                             [toView removeFromSuperview];
+                         } else {
+                             [fromView removeFromSuperview];
+                         }
+                         [transitionContext completeTransition: ![transitionContext transitionWasCancelled]];
+                     }];
 }
 
 @end
