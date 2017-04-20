@@ -16,10 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
     self.imageView.image = self.image;
-    
     
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismiss:)];
     [self.imageView addGestureRecognizer:tapGesture];
@@ -29,7 +27,6 @@
     if ([self.delegate respondsToSelector:@selector(viewControllerWillDismissWithView:)]) {
         [self.delegate viewControllerWillDismissWithView:self.imageView];
     }
-//    self.imageTransition.imageView = self.imageView;
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
