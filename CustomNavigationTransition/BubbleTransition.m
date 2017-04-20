@@ -61,7 +61,7 @@
         presentedControllerView.alpha = 0;
         [containerView addSubview:presentedControllerView];
         
-        [UIView animateWithDuration:self.dureation animations:^{
+        [UIView animateWithDuration:self.dureation delay:0 usingSpringWithDamping:1.0 initialSpringVelocity:0.0 options:UIViewAnimationOptionAllowUserInteraction | UIViewAnimationOptionCurveLinear  animations:^{
             self.bubble.transform = CGAffineTransformIdentity;
             presentedControllerView.alpha = 1;
             presentedControllerView.center = originalCenter;
@@ -83,7 +83,7 @@
         [containerView bringSubviewToFront:self.bubble];
 //        self.bubble.backgroundColor = [UIColor redColor];
         
-        [UIView animateWithDuration:self.dureation animations:^{
+        [UIView animateWithDuration:self.dureation delay:0 usingSpringWithDamping:1.0 initialSpringVelocity:0.0 options:UIViewAnimationOptionAllowUserInteraction | UIViewAnimationOptionCurveLinear  animations:^{
             self.bubble.transform = CGAffineTransformMakeScale(0.001, 0.001);
 //            returningControllerView.transform = CGAffineTransformMakeScale(0.001, 0.001);
 //            returningControllerView.center = self.startingPoint;
