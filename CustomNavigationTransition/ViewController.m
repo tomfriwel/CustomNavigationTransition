@@ -65,9 +65,10 @@
     
 //    self.circleTransition = [[CirclePresentTransition alloc] init];
 //    self.circleTransition.senderFrame = [sender frame];
+    
     self.bubbleTransition = [[BubbleTransition alloc] init];
     self.bubbleTransition.startingPoint = sender.center;
-    self.bubbleTransition.bubbleColor = sender.backgroundColor ? sender.backgroundColor : [UIColor redColor];
+    self.bubbleTransition.bubbleColor = vc.view.backgroundColor;
     
     [self presentViewController:vc animated:YES completion:nil];
 }

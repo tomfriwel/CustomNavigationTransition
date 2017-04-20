@@ -17,9 +17,7 @@ typedef NS_ENUM(NSInteger, BubbleTransitionMode) {
 @interface BubbleTransition : NSObject <UIViewControllerAnimatedTransitioning>
 
 @property CGPoint startingPoint;
-@property CGFloat dureation;
 @property BubbleTransitionMode transitionMode;
 @property UIColor *bubbleColor;
-@property UIView *bubble;
 
 @end
