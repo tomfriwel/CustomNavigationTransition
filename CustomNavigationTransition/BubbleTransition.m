@@ -64,23 +64,35 @@
             [transitionContext completeTransition:YES];
         }];
     } else {
-        NSString *key = UITransitionContextFromViewKey;
-        UIView *toView = [transitionContext viewForKey:key];
-        CGPoint originalCenter = toView.center;
-        CGSize originalSize = toView.frame.size;
+        NSString *key = (self.transitionMode == pop) ? UITransitionContextToViewKey : UITransitionContextFromViewKey;
+        UIView *fromView = [transitionContext viewForKey:key];
+        UIView *toView = [transitionContext viewForKey:UITransitionContextToViewKey];
+        
+        CGPoint originalCenter = fromView.center;
+        CGSize originalSize = fromView.frame.size;
         
         self.bubble.frame = [self frameForBubble:originalCenter originalSize:originalSize start:self.startingPoint];
         self.bubble.layer.cornerRadius = self.bubble.frame.size.height / 2;
         self.bubble.center = self.startingPoint;
         
+        
+        [containerView addSubview:toView];
+        [containerView bringSubviewToFront:self.bubble];
+        [containerView bringSubviewToFront:fromView];
+        
         [UIView animateWithDuration:self.dureation delay:0 usingSpringWithDamping:1.0 initialSpringVelocity:0.0 options:UIViewAnimationOptionAllowUserInteraction | UIViewAnimationOptionCurveLinear  animations:^{
             self.bubble.transform = CGAffineTransformMakeScale(0.001, 0.001);
-            toView.transform = CGAffineTransformMakeScale(0.001, 0.001);
-            toView.center = self.startingPoint;
-            toView.alpha = 0;
+            fromView.transform = CGAffineTransformMakeScale(0.001, 0.001);
+            fromView.center = self.startingPoint;
+            fromView.alpha = 0;
+            
+            if (self.transitionMode == pop) {
+                [containerView insertSubview:fromView belowSubview: fromView];
+                [containerView insertSubview:self.bubble belowSubview:fromView];
+            }
         } completion:^(BOOL finished) {
-            toView.center = originalCenter;
-            [toView removeFromSuperview];
+            fromView.center = originalCenter;
+            [fromView removeFromSuperview];
             [self.bubble removeFromSuperview];
             [transitionContext completeTransition:YES];
         }];
