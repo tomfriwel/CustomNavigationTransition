@@ -60,7 +60,7 @@
     
     UIViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"CirclePresentedViewController"];
     vc.transitioningDelegate = self;
-//    vc.modalPresentationStyle = UIModalPresentationCustom;
+    vc.modalPresentationStyle = UIModalPresentationCustom;
     self.presentType = @"popCircle";
     
 //    self.circleTransition = [[CirclePresentTransition alloc] init];
